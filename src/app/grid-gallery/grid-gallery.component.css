@@ -1,0 +1,15 @@
+section {
+    margin-top: 20px;
+}
+img {
+    vertical-align: center;
+    min-height: 270px;
+}
+.panel { position: relative; overflow: hidden; display: block; border-radius: 0 !important;  }
+.panel-default { border-color: #ebedef !important; }
+.panel .panel-body { position: relative; padding: 0 !important; overflow: hidden; height: auto; }
+.panel .panel-body a { overflow: hidden; }
+.panel-body {
+    max-height: 270px;
+    overflow: hidden;
+}
