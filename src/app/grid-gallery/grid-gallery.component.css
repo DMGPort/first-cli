@@ -5,7 +5,31 @@ img {
     vertical-align: center;
     min-height: 270px;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bolder;
+}
 .panel { position: relative; overflow: hidden; display: block; border-radius: 0 !important;  }
+article:hover .panel-footer {
+        background-color: lightgray;
+}
+article:hover #aux{
+    visibility: visible;
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+article:hover #title{
+    color: grey;
+}
+#aux{
+    text-align: center;
+    visibility: hidden;
+}
+#title {
+    text-align: right;
+    margin-top: 2px;
+}
 .panel-default { border-color: #ebedef !important; }
 .panel .panel-body { position: relative; padding: 0 !important; overflow: hidden; height: auto; }
 .panel .panel-body a { overflow: hidden; }

@@ -24,9 +24,10 @@
     max-width:100%;
 }
 .carousel h2{
+    font-family: 'Playfair Display SC', serif;
     margin-bottom: 0;
-    font-size:1em;
-    padding:1.5em 0.5em 1.5em 0.5em;
+    font-size:3em;
+    padding:0.5em 0.5em 0.5em 0.5em;
     position:absolute;
     right:0px;
     bottom:0px;
@@ -34,7 +35,6 @@
     text-align:center;
     color:#fff;
     background-color:rgba(0,0,0,0.75);
-    text-transform: uppercase;
 }
 
 @keyframes carousel{
