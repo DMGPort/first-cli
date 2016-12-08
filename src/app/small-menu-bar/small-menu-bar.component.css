@@ -1,0 +1,29 @@
+.glyphicon {
+    font-size:26px;
+}
+#small-nav {
+    background-color: rgba(10, 9, 11, 0.5);
+    border-radius: 0 0 5px 0;
+    position: fixed;
+    z-index: 30;
+}
+#burger-menu {
+    font-size:36px;
+    padding: 15px 20px 20px 15px;
+    color: white;
+}
+.menu-item *{
+    text-align: center;
+    color: white;
+}
+.menu-item *:hover{
+    color: grey;
+}
+ul:hover *{
+     color: grey;
+}
+@media (min-width: 768px) {
+    #small-nav{
+        display: none;
+    }
+}
