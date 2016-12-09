@@ -1,6 +1,6 @@
 <div class="container">
     <section class="row">
-        <article *ngFor="let blog of blogs" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        <article *ngFor="let blog of blogs" (click)="onSelect(blog)" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="panel panel-default">
                 <div class="panel-body">
                   <h5 id="aux">{{ blog.subTitle }}</h5>

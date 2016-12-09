@@ -1,0 +1,56 @@
+<div class="blog-div">
+    <div *ngIf="blog">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="jumbotron">
+                    <img src="{{ blog.imgUrl }}" />
+                    <h1>{{ blog.title }}</h1>
+                    <p>
+                        {{ blog.subTitle }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <p class="paragraph">{{ blog.text[0] }}</p>
+                <p class="paragraph">{{ blog.text[1] }}</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!blog">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>This is the end of blogs</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div id="back-nav" class="footer navbar-fixed-bottom">
+            <div class="navbar-header">
+                <a (click)="goBack()" class="title">
+                    <div>
+                        <span id="back-menu" class="glyphicon glyphicon-menu-left"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div id="forward-nav" class="footer navbar-fixed-bottom">
+            <div class="navbar-header">
+                <a (click)="nextBlog(blog)" class="title">
+                    <div>
+                        <span id="forward-menu" class="glyphicon glyphicon-menu-right"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,19 +5,23 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
-import { SmallMenuBarComponent } from './small-menu-bar/small-menu-bar.component';
+import { SmallMenuBarComponent } from './menu-bar-small/small-menu-bar.component';
 import { BigCarouselComponent } from './big-carousel/big-carousel.component';
-import { GridGalleryComponent } from './grid-gallery/grid-gallery.component';
+import { BlogGalleryComponent } from './blog-gallery/blog-gallery.component';
+import { BlogFullComponent } from './blog-full/blog-full.component';
 
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import { BlogService } from './blog.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BigCarouselComponent,
     MenuBarComponent,
-    GridGalleryComponent,
-    SmallMenuBarComponent
+    SmallMenuBarComponent,
+    BigCarouselComponent,
+    BlogGalleryComponent,
+    BlogFullComponent
   ],
   imports: [
       BrowserModule,
@@ -25,7 +29,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
       HttpModule,
       AppRoutingModule
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

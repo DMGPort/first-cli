@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { GridGalleryComponent } from './grid-gallery.component';
+import { BlogFullComponent } from './blog-full.component';
 
-describe('GridGalleryComponent', () => {
-  let component: GridGalleryComponent;
-  let fixture: ComponentFixture<GridGalleryComponent>;
+describe('BlogFullComponent', () => {
+  let component: BlogFullComponent;
+  let fixture: ComponentFixture<BlogFullComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GridGalleryComponent ]
+      declarations: [ BlogFullComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GridGalleryComponent);
+    fixture = TestBed.createComponent(BlogFullComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
